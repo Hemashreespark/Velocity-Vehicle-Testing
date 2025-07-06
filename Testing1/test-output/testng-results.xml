@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-05T17:44:29 IST" name="Default suite" finished-at="2025-07-05T17:46:25 IST" duration-ms="116002">
+    <groups>
+    </groups>
+    <test started-at="2025-07-05T17:44:29 IST" name="Default test" finished-at="2025-07-05T17:46:25 IST" duration-ms="116002">
+      <class name="tests.CustomerSignUpTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:44:57 IST" name="setUp" finished-at="2025-07-05T17:45:05 IST" duration-ms="7914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="InvalidSignup()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:05 IST" name="InvalidSignup" finished-at="2025-07-05T17:45:09 IST" duration-ms="3290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:09 IST" name="tearDown" finished-at="2025-07-05T17:45:12 IST" duration-ms="3777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:12 IST" name="setUp" finished-at="2025-07-05T17:45:22 IST" duration-ms="9959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="UsernameWithSpecialCharacter_404Check()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:22 IST" name="UsernameWithSpecialCharacter_404Check" finished-at="2025-07-05T17:45:36 IST" duration-ms="13485" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to no longer be visible: By.cssSelector: .popup-overlay (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2401732\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56743/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e688fa375a7da17e4a63ab640004c2ab]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.cssSelector: .popup-overlay (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2401732\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56743/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e688fa375a7da17e4a63ab640004c2ab
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at tests.CustomerSignUpTest.UsernameWithSpecialCharacter_404Check(CustomerSignUpTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsernameWithSpecialCharacter_404Check -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:36 IST" name="tearDown" finished-at="2025-07-05T17:45:41 IST" duration-ms="4917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:41 IST" name="setUp" finished-at="2025-07-05T17:45:49 IST" duration-ms="8305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="missingField()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:49 IST" name="missingField" finished-at="2025-07-05T17:45:52 IST" duration-ms="3140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:52 IST" name="tearDown" finished-at="2025-07-05T17:45:56 IST" duration-ms="4015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:45:56 IST" name="setUp" finished-at="2025-07-05T17:46:06 IST" duration-ms="9401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidSignUp()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:46:06 IST" name="testValidSignUp" finished-at="2025-07-05T17:46:09 IST" duration-ms="3312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidSignUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerSignUpTest@24269709]" started-at="2025-07-05T17:46:09 IST" name="tearDown" finished-at="2025-07-05T17:46:13 IST" duration-ms="3912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CustomerSignUpTest -->
+      <class name="tests.CustomerLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerLoginTest@5b12b668]" started-at="2025-07-05T17:44:29 IST" name="setUp" finished-at="2025-07-05T17:44:39 IST" duration-ms="9877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:tests.CustomerLoginTest@5b12b668]" started-at="2025-07-05T17:44:39 IST" name="testInvalidLogin" finished-at="2025-07-05T17:44:41 IST" duration-ms="1451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerLoginTest@5b12b668]" started-at="2025-07-05T17:44:41 IST" name="tearDown" finished-at="2025-07-05T17:44:44 IST" duration-ms="3616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerLoginTest@5b12b668]" started-at="2025-07-05T17:44:44 IST" name="setUp" finished-at="2025-07-05T17:44:52 IST" duration-ms="7623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.CustomerLoginTest@5b12b668]" started-at="2025-07-05T17:44:52 IST" name="testValidLogin" finished-at="2025-07-05T17:44:53 IST" duration-ms="1340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerLoginTest@5b12b668]" started-at="2025-07-05T17:44:53 IST" name="tearDown" finished-at="2025-07-05T17:44:57 IST" duration-ms="4066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CustomerLoginTest -->
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@2aceadd4]" started-at="2025-07-05T17:46:13 IST" name="setUp" finished-at="2025-07-05T17:46:21 IST" duration-ms="8323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testStickyNavigationBar()[pri:0, instance:tests.HomePageTest@2aceadd4]" started-at="2025-07-05T17:46:21 IST" name="testStickyNavigationBar" finished-at="2025-07-05T17:46:21 IST" duration-ms="163" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Navigation bar is not sticky. expected [0.0] but found [-526.6666870117188]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Navigation bar is not sticky. expected [0.0] but found [-526.6666870117188]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEquals(Assert.java:728)
+at tests.HomePageTest.testStickyNavigationBar(HomePageTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStickyNavigationBar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@2aceadd4]" started-at="2025-07-05T17:46:21 IST" name="tearDown" finished-at="2025-07-05T17:46:25 IST" duration-ms="3975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
